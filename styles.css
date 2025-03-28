@@ -1685,4 +1685,57 @@ section:not(.hero) {
         padding: 0.3rem 0.6rem;
         font-size: 0.5rem;
     }
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.social-link {
+    font-size: 2rem;
+    color: var(--arcade-text);
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 0.5rem;
+}
+
+.social-link:hover {
+    color: var(--arcade-accent);
+    transform: translateY(-3px);
+}
+
+.social-link.github:hover {
+    color: #6e5494;
+    text-shadow: 0 0 10px rgba(110, 84, 148, 0.5);
+}
+
+.social-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid currentColor;
+    border-radius: 4px;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover::after {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .social-links {
+        gap: 1.5rem;
+    }
+    
+    .social-link {
+        font-size: 1.5rem;
+    }
 } 

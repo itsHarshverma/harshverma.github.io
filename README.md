@@ -46,4 +46,14 @@ A beautiful, interactive portfolio website inspired by Studio Ghibli's art style
 
 ## License
 
-MIT License - feel free to use this template for your own portfolio! 
+This project is licensed under the MIT License - feel free to use this template for your own portfolio!
+
+## Author
+
+Created by Harsh V
+
+## Acknowledgments
+
+- Font Awesome for icons
+- Google Fonts for typography
+- Three.js community for 3D graphics support 
