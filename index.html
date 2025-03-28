@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-content">
+            <div class="nav-logo">
+                <div class="logo-text">
+                    <span class="logo-glitch" data-text="HARSH V">HARSH V</span>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">HOME</a>
+                <a href="#about" class="nav-link">ABOUT</a>
+                <a href="#projects" class="nav-link">PROJECTS</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
+            </div>
+            <button class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <button class="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">PLAYER 1</h1>
+            <p class="hero-subtitle">PRESS START TO BEGIN</p>
+            <div class="hero-cta">
+                <button class="arcade-btn start-btn">START GAME</button>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="pixel-grid"></div>
+            <div class="arcade-car"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-header">
+            <h2>ABOUT ME</h2>
+            <div class="pixel-border"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <div class="pixel-frame">
+                    <img src="./Portfoiliopic.jpg" alt="Profile Picture" class="profile-img">
+                </div>
+                <div class="joystick-3d"></div>
+            </div>
+            <div class="about-text">
+                <div class="typing-text">
+                    <p>LEVEL 1: FULL-STACK DEVELOPER</p>
+                    <p>SKILLS: SELECT YOUR WEAPON</p>
+                </div>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3 class="skill-title">PROGRAMMING</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">Spring Boot</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-title">FRONT-END</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React.js</span>
+                            <span class="skill-tag">Next.js</span>
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-title">BACK-END</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express.js</span>
+                            <span class="skill-tag">RESTful APIs</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-title">DATABASES</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">Firebase</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-title">TOOLS</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Vercel</span>
+                            <span class="skill-tag">Netlify</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-header">
+            <h2>PROJECTS</h2>
+            <div class="pixel-border"></div>
+        </div>
+        <div class="projects-grid">
+            <!-- Freelance Project -->
+            <div class="project-card">
+                <div class="project-icon">
+                    <div class="arcade-car-mini"></div>
+                </div>
+                <h3>COUNSELLING WEBSITE</h3>
+                <p>A comprehensive counselling platform featuring dynamic content management, user authentication, and seamless integration with Wix CMS. Built with modern tech stack including React, Three.js, and Tailwind CSS.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Three.js</span>
+                    <span class="tech-tag">Tailwind</span>
+                    <span class="tech-tag">Wix CMS</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link">VIEW DEMO</a>
+                    <a href="#" class="project-link">GITHUB</a>
+                </div>
+            </div>
+
+            <!-- E-learning Platform -->
+            <div class="project-card">
+                <div class="project-icon">
+                    <div class="arcade-car-mini"></div>
+                </div>
+                <h3>E-LEARNING PLATFORM</h3>
+                <p>An interactive learning management system featuring course management, progress tracking, and real-time assessments. Implemented with responsive design and gamification elements.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Express</span>
+                    <span class="tech-tag">React</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link">VIEW DEMO</a>
+                    <a href="#" class="project-link">GITHUB</a>
+                </div>
+            </div>
+
+            <!-- Expense Tracker -->
+            <div class="project-card">
+                <div class="project-icon">
+                    <div class="arcade-car-mini"></div>
+                </div>
+                <h3>EXPENSE TRACKER</h3>
+                <p>A modern financial management tool with interactive charts, budget planning, and expense categorization. Features real-time updates and data visualization using D3.js.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">D3.js</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">Chart.js</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link">VIEW DEMO</a>
+                    <a href="#" class="project-link">GITHUB</a>
+                </div>
+            </div>
+
+            <!-- Image Search Engine -->
+            <div class="project-card">
+                <div class="project-icon">
+                    <div class="arcade-car-mini"></div>
+                </div>
+                <h3>IMAGE SEARCH ENGINE</h3>
+                <p>A powerful image search platform utilizing AI and machine learning for accurate image recognition and retrieval. Features advanced filtering and similarity search capabilities.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">TensorFlow</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link">VIEW DEMO</a>
+                    <a href="#" class="project-link">GITHUB</a>
+                </div>
+            </div>
+
+            <!-- Personal Portfolio -->
+            <div class="project-card">
+                <div class="project-icon">
+                    <div class="arcade-car-mini"></div>
+                </div>
+                <h3>ARCADE PORTFOLIO</h3>
+                <p>A retro-themed portfolio website featuring interactive elements, smooth animations, and responsive design. Built with modern web technologies and arcade-inspired aesthetics.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Three.js</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link">VIEW DEMO</a>
+                    <a href="#" class="project-link">GITHUB</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>HIGH SCORE</h2>
+            <div class="pixel-border"></div>
+        </div>
+        <div class="contact-content">
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" required>
+                    <label for="name">PLAYER NAME</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required>
+                    <label for="email">EMAIL</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" required></textarea>
+                    <label for="message">MESSAGE</label>
+                </div>
+                <button type="submit" class="arcade-btn submit-btn">
+                    <span class="btn-text">SEND SCORE</span>
+                    <span class="btn-loading"></span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-score">
+                <span class="score-label">HIGH SCORE:</span>
+                <span class="score-value">999999</span>
+            </div>
+            <div class="footer-links">
+                <a href="#" class="footer-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="footer-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="footer-link"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="footer-coin">
+                <div class="coin-mini"></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sound Effects -->
+    <audio id="coinSound" src="sounds/coin.mp3"></audio>
+    <audio id="hoverSound" src="sounds/hover.mp3"></audio>
+    <audio id="clickSound" src="sounds/click.mp3"></audio>
+
+    <script src="script.js"></script>
+    <script>
+        // Theme Toggle Functionality
+        const themeToggle = document.querySelector('.theme-toggle');
+        const themeIcon = themeToggle.querySelector('i');
+        
+        // Set initial theme (default to dark if no preference saved)
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        updateThemeIcon(savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            // Play click sound
+            clickSound.play();
+            
+            // Add pressed animation
+            themeToggle.classList.add('pressed');
+            setTimeout(() => themeToggle.classList.remove('pressed'), 200);
+            
+            // Toggle theme
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            
+            // Update theme
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            
+            // Update icon with animation
+            themeIcon.classList.add('rotate-icon');
+            setTimeout(() => {
+                updateThemeIcon(newTheme);
+                themeIcon.classList.remove('rotate-icon');
+            }, 200);
+        });
+
+        function updateThemeIcon(theme) {
+            themeIcon.className = '';  // Clear existing classes
+            themeIcon.classList.add('fas');
+            themeIcon.classList.add(theme === 'light' ? 'fa-moon' : 'fa-sun');
+        }
+
+        // Add hover sound to theme toggle
+        themeToggle.addEventListener('mouseenter', () => hoverSound.play());
+
+        // Mobile Menu Toggle
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form Submission
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const submitBtn = contactForm.querySelector('.submit-btn');
+            submitBtn.classList.add('loading');
+            
+            // Simulate form submission
+            setTimeout(() => {
+                submitBtn.classList.remove('loading');
+                alert('MESSAGE SENT!');
+                contactForm.reset();
+            }, 1500);
+        });
+
+        // Custom Cursor
+        const cursor = document.querySelector('.custom-cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        // Sound Effects
+        const coinSound = new Howl({
+            src: ['sounds/coin.mp3'],
+            volume: 0.5
+        });
+
+        const hoverSound = new Howl({
+            src: ['sounds/hover.mp3'],
+            volume: 0.3
+        });
+
+        const clickSound = new Howl({
+            src: ['sounds/click.mp3'],
+            volume: 0.4
+        });
+
+        // Add sound effects to interactive elements
+        document.querySelectorAll('.arcade-btn, .nav-link, .project-link').forEach(element => {
+            element.addEventListener('mouseenter', () => hoverSound.play());
+            element.addEventListener('click', () => clickSound.play());
+        });
+    </script>
+</body>
+</html> 
